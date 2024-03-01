@@ -26,9 +26,9 @@
     <link rel="stylesheet" type="text/css" href="_static/sphinx-pythia-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
 
@@ -42,7 +42,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -54,7 +54,6 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Hackathon schedule" href="schedule.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -179,8 +178,8 @@ const thebe_selector_output = ".output, .cell_output"
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 current">
-  <a class="reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
    Pythia Cook-off 2024
   </a>
  </li>
@@ -198,7 +197,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="travel.html">
-   Travel info
+   Travel Information
   </a>
  </li>
  <li class="toctree-l1">
@@ -207,13 +206,13 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="faq.html">
-   Frequently Asked Questions
+  <a class="reference internal" href="onboarding.html">
+   Tutorials and Training
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="onboarding.html">
-   Tutorials and Training
+  <a class="reference internal" href="faq.html">
+   Frequently Asked Questions
   </a>
  </li>
 </ul>
@@ -303,8 +302,8 @@ All code in Pythia Cookbooks is licensed under Apache 2.0. All other non-code co
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#save-the-date">
-   Save the Date!
+  <a class="reference internal nav-link" href="#register-now">
+   Register Now!
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -332,22 +331,31 @@ All code in Pythia Cookbooks is licensed under Apache 2.0. All other non-code co
 <div class="tex2jax_ignore mathjax_ignore section" id="pythia-cook-off-2024">
 <h1>Pythia Cook-off 2024<a class="headerlink" href="#pythia-cook-off-2024" title="Permalink to this headline"><i class="fas fa-link"></i></a></h1>
 <p><a class="reference external" href="https://github.com/ProjectPythia/pythia-cookoff-2024/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/pythia-cookoff-2024/actions/workflows/nightly-build.yaml/badge.svg" /></a></p>
-<div class="section" id="save-the-date">
-<h2>Save the Date!<a class="headerlink" href="#save-the-date" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<p><strong>June 11-14 2024, in person at the <a class="reference external" href="https://scied.ucar.edu/visit">NCAR Mesa Lab</a> and virtual</strong></p>
-<p><em><strong>Travel funding</strong> will be available for some in-person participants! Stay tuned for more information.</em></p>
+<div class="section" id="register-now">
+<h2>Register Now!<a class="headerlink" href="#register-now" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
+<p>Registration for the 2024 Pythia Cook-off hackathon for geoscientific Python Cookbook development is now live!</p>
+<p>Join Project Pythia June 11-14 2024 in-person in Boulder, CO at the <a class="reference external" href="https://scied.ucar.edu/visit">NCAR Mesa Lab</a> or virtually via Zoom.</p>
+<p>New in 2024, Project Pythia has limited funding from the U.S. National Science Foundation to support travel expenses for in-person participants!
+If full or partial travel support could help you attend this year’s hackathon, please see the <a class="reference internal" href="travel.html"><span class="doc std std-doc">Travel Information</span></a> page for more information.</p>
+<p>The deadline for all registration is <strong>May 26</strong>, with priority registration for travel support consideration due by <strong>March 29</strong>.
+There is a $50 USD registration fee for in-person attendees due at the time of registration to support event expenses.
+Virtual-only registration will remain free.</p>
+<p>Bring your own ideas and existing materials, and consider leading a <a class="reference internal" href="breakouts.html"><span class="doc std std-doc">breakout group</span></a> to hack alongside other interested folks in your area of expertise.</p>
+<p>Head to <a class="reference external" href="https://www.eventsquid.com/event.cfm?id=23645">our registration page</a> to sign up!</p>
 </div>
 <div class="section" id="what-is-it">
 <h2>What is it?<a class="headerlink" href="#what-is-it" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<p>Project Pythia invites you to join a Cookbook Cook-off.  <a class="reference external" href="https://cookbooks.projectpythia.org">Pythia Cookbooks</a> are crowd-sourced collections of advanced, domain-specific tutorials and exemplar workflows, building upon our <a class="reference external" href="https://foundations.projectpythia.org">Pythia Foundations</a> tutorials. Cookbooks are supported by a rich GitHub-based infrastructure enabling collaborative authoring and automated health-checking to ensure reproducibility.</p>
-<p>The Pythia Cook-off will grow the collection of accessible, reusable, and reproducible geoscientific workflows in the Pythia Cookbooks, while broadening the community of user-contributors. We want to create a forum for people to bring their ideas, existing code, or rough notebooks and collaborate on turning them into community Cookbooks.</p>
+<p>Project Pythia continues offering its annual <em>Cook-off</em> hackathon for creating and maintaining Pythia Cookbooks. <a class="reference external" href="https://cookbooks.projectpythia.org">Pythia Cookbooks</a> are crowd-sourced collections of domain-specific tutorials and exemplar workflows, building upon our <a class="reference external" href="https://foundations.projectpythia.org">Pythia Foundations</a> tutorials. Cookbooks are supported by a rich GitHub-based infrastructure enabling collaborative authoring and automated health-checking to ensure reproducibility.</p>
+<p>Participants in the Cook-off will develop their skills in contributing code and non-code to open source projects, demonstrating open science practices, and communicating and collaborating with other professionals. By doing so, they will grow the collection of accessible, reusable, and reproducible Cookbooks. This is a space for scientists, educators, and developers to bring their ideas, existing code, or rough notebooks and collaborate on turning them into community Cookbooks.</p>
 </div>
 <div class="section" id="who-is-this-for">
 <h2>Who is this for?<a class="headerlink" href="#who-is-this-for" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<p>All levels of experience are welcome: from the user who would like a tutorial on Cookbooks to the seasoned Pangeo community member.</p>
+<p>You!
+Hackathon may be a scary word, but this event is for students, scientists, educators, engineers, hobbyists, professionals, and more across a spectrum of expertise and ability.
+Familiarity with Python, git and GitHub, and Jupyter will help you best collaborate with others and best build your skills during the brief Hackathon period.
+Check out <a class="reference external" href="https://foundations.projectpythia.org">Pythia Foundations</a> for a crash course in these topics.
+We also encourage non-code participation through the creation of narrative text, images or GIFs, and even produced videos to support Cookbook content.</p>
 <p>Pythia is committed to building an inclusive space that promotes and values diversity. We hope that our platform can represent the diverse voices present in the geoscience community, as we work together to solve global challenges.</p>
-</div>
-<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -374,13 +382,6 @@ All code in Pythia Cookbooks is licensed under Apache 2.0. All other non-code co
               </div>
               <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="schedule.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Hackathon schedule</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             </div>
           </div>
@@ -426,7 +427,7 @@ All code in Pythia Cookbooks is licensed under Apache 2.0. All other non-code co
         
           By the <a href="https://projectpythia.org/">Project Pythia</a> Community.
         
-          Last updated on 20 February 2024.
+          Last updated on 1 March 2024.
         </p>
       </div>
     </div>
